@@ -1,0 +1,54 @@
+@use './config/variaveis';
+
+body{
+    background-color: variaveis.$corDeFundo;
+    font-family: variaveis.$fontePrincipal;
+    color: variaveis.$corDoTexto;
+}
+h1{
+    font-family: variaveis.$fonteDoTitulo;
+}
+main{
+    max-width: 960px;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+}
+
+button{
+    padding: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-top: 16px;
+    border-radius: 8px;
+    background-color: variaveis.$corDoFundoDoBotao;
+    color: variaveis.$corDoTextoDoBotao;
+    font-family: variaveis.$fontePrincipal;
+}
+
+input{
+    display: block;
+    margin: 16px auto 0;
+    font-size: 2em;
+    max-width: 120px;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    color: variaveis.$corDoTexto;
+    border-bottom: 6px solid variaveis.$corDoTexto;
+}
+
+.resultado{
+    padding: 16px;
+    margin-top: 120px;
+    border: 8px dotted variaveis.$corDoTexto;
+    display: none;
+
+    span{
+        font-weight: bold;
+        font-size: 3em;
+        display: block;
+    }
+}
